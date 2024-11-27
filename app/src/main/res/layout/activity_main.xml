@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_img"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Bui Quoc Nam"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you want buy or sell?"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/buyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I want to buy"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:id="@+id/sellBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I want to sell"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/rmbCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember my choice"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
